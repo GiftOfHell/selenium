@@ -6,7 +6,9 @@ describe('Buy mac item.', () => {
   const pageUrl = 'https://www.apple.com/mac';
 
   beforeEach(async function () {
-    this.driver = await new Builder().forBrowser(Browser.CHROME).build();
+    this.driver = new Builder().
+    usingServer('http://localhost:4444/wd/hub').
+    build();
     await this.driver.manage().window().maximize();
   });
 
