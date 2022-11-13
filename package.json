@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "browserstack-local": "^1.4.8",
     "selenium-webdriver": "4.2.0",
     "chai": "^4.2.0",
