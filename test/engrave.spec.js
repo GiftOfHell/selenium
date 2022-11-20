@@ -6,9 +6,7 @@ const AirpodsPage = require('../pages/airpodsPage');
 
 describe('Should engrave items.', () => {
   beforeEach(async function () {
-    this.driver = new Builder().
-    forBrowser(Browser.CHROME).
-    build();
+    this.driver = new Builder().forBrowser(Browser.CHROME).build();
     await this.driver.manage().window().maximize();
   });
 

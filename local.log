@@ -1,14 +1,14 @@
 "" 
 
-Sun Nov 13 2022 15:15:28:7 GMT+0300 (Belarus Standard Time) -- Binary semantic version is v8.8.4
-Sun Nov 13 2022 15:15:28:7 GMT+0300 (Belarus Standard Time) -- Setting output as extra verbose with request parsing
-Sun Nov 13 2022 15:15:29:900 GMT+0300 (Belarus Standard Time) -- [INFO] Started the BrowserStack Binary server on 45691, PID: 10828
-Sun Nov 13 2022 15:15:30:108 GMT+0300 (Belarus Standard Time) -- [SUCCESS] You can now access your local server(s) in our remote browser
+Sun Nov 20 2022 15:43:21:102 GMT+0300 (Belarus Standard Time) -- Binary semantic version is v8.8.4
+Sun Nov 20 2022 15:43:21:102 GMT+0300 (Belarus Standard Time) -- Setting output as extra verbose with request parsing
+Sun Nov 20 2022 15:43:22:227 GMT+0300 (Belarus Standard Time) -- [INFO] Started the BrowserStack Binary server on 45691, PID: 18560
+Sun Nov 20 2022 15:43:22:553 GMT+0300 (Belarus Standard Time) -- [SUCCESS] You can now access your local server(s) in our remote browser
 
-Sun Nov 13 2022 15:15:30:134 GMT+0300 (Belarus Standard Time) -- Connecting to BrowserStack using WebSocket protocol...
-Sun Nov 13 2022 15:15:30:134 GMT+0300 (Belarus Standard Time) -- Platform supports WebSocket connections.
+Sun Nov 20 2022 15:43:22:620 GMT+0300 (Belarus Standard Time) -- Connecting to BrowserStack using WebSocket protocol...
+Sun Nov 20 2022 15:43:22:620 GMT+0300 (Belarus Standard Time) -- Platform supports WebSocket connections.
 
-Sun Nov 13 2022 15:15:30:246 GMT+0300 (Belarus Standard Time) -- Press Ctrl-C to exit
+Sun Nov 20 2022 15:43:22:723 GMT+0300 (Belarus Standard Time) -- Press Ctrl-C to exit
 
 
-Sun Nov 13 2022 15:15:30:434 GMT+0300 (Belarus Standard Time) -- Starting configuration console on http://localhost:45454
+Sun Nov 20 2022 15:43:23:673 GMT+0300 (Belarus Standard Time) -- Starting configuration console on http://localhost:45454

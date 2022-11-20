@@ -16,3 +16,10 @@
 {"level":"info","message":"Now, showing logs from mocha","timestamp":"2022-11-13T12:15:30.649Z"}
 {"level":"info","message":"Configuring to run tests on BrowserStack","timestamp":"2022-11-13T12:15:32.229Z"}
 {"level":"info","message":"Local binary stopped","timestamp":"2022-11-13T12:15:52.950Z"}
+{"level":"info","message":"Reading configs from C:\\Users\\Vlad-\\webgroup0010\\Auto\\Lab_9\\browserstack.yml","timestamp":"2022-11-20T12:43:19.083Z"}
+{"level":"info","message":"Local binary started successfully","timestamp":"2022-11-20T12:43:23.009Z"}
+{"level":"info","message":"Running your mocha tests across 1 platforms","timestamp":"2022-11-20T12:43:23.020Z"}
+{"level":"info","message":"Now, showing logs from mocha","timestamp":"2022-11-20T12:43:23.020Z"}
+{"level":"info","message":"Configuring to run tests on BrowserStack","timestamp":"2022-11-20T12:43:24.555Z"}
+{"level":"info","message":"Configuring to run tests on BrowserStack","timestamp":"2022-11-20T12:43:56.484Z"}
+{"level":"info","message":"Local binary stopped","timestamp":"2022-11-20T12:44:15.924Z"}

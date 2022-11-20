@@ -5,9 +5,7 @@ const MacAirPage = require("../pages/macAirPage");
 
 describe('Add items to bag.', () => {
   beforeEach(async function () {
-    this.driver = new Builder().
-    forBrowser(Browser.CHROME).
-    build();
+    this.driver = new Builder().forBrowser(Browser.CHROME).build();
     await this.driver.manage().window().maximize();
   });
 
