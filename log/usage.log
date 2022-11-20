@@ -1,0 +1,18 @@
+{"level":"info","message":"Reading configs from C:\\Users\\Vlad-\\webgroup0010\\Auto\\Lab_9\\browserstack.yml","timestamp":"2022-11-13T11:41:16.041Z"}
+{"level":"info","message":"Local binary started successfully","timestamp":"2022-11-13T11:42:39.155Z"}
+{"level":"info","message":"Running your mocha tests across 1 platforms","timestamp":"2022-11-13T11:42:39.165Z"}
+{"level":"info","message":"Now, showing logs from mocha","timestamp":"2022-11-13T11:42:39.166Z"}
+{"level":"info","message":"Configuring to run tests on BrowserStack","timestamp":"2022-11-13T11:42:40.661Z"}
+{"level":"info","message":"Local binary stopped","timestamp":"2022-11-13T11:43:06.543Z"}
+{"level":"info","message":"Reading configs from C:\\Users\\Vlad-\\webgroup0010\\Auto\\Lab_9\\browserstack.yml","timestamp":"2022-11-13T12:15:09.307Z"}
+{"level":"info","message":"Local binary started successfully","timestamp":"2022-11-13T12:15:12.845Z"}
+{"level":"info","message":"Running your mocha tests across 1 platforms","timestamp":"2022-11-13T12:15:12.855Z"}
+{"level":"info","message":"Now, showing logs from mocha","timestamp":"2022-11-13T12:15:12.855Z"}
+{"level":"info","message":"Configuring to run tests on BrowserStack","timestamp":"2022-11-13T12:15:14.368Z"}
+{"level":"info","message":"Local binary stopped","timestamp":"2022-11-13T12:15:17.561Z"}
+{"level":"info","message":"Reading configs from C:\\Users\\Vlad-\\webgroup0010\\Auto\\Lab_9\\browserstack.yml","timestamp":"2022-11-13T12:15:26.433Z"}
+{"level":"info","message":"Local binary started successfully","timestamp":"2022-11-13T12:15:30.635Z"}
+{"level":"info","message":"Running your mocha tests across 1 platforms","timestamp":"2022-11-13T12:15:30.648Z"}
+{"level":"info","message":"Now, showing logs from mocha","timestamp":"2022-11-13T12:15:30.649Z"}
+{"level":"info","message":"Configuring to run tests on BrowserStack","timestamp":"2022-11-13T12:15:32.229Z"}
+{"level":"info","message":"Local binary stopped","timestamp":"2022-11-13T12:15:52.950Z"}
