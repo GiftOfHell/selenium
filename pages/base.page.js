@@ -1,11 +1,14 @@
 const { By, until } = require("selenium-webdriver");
 
+const logger = require("../logger")
+
 class BasePage {
   constructor(driver) {
     this.driver = driver;
   }
 
   async openPage(url) {
+    logger.info(`Opening the page: ${url}.`);
     await this.driver.get(url);
 
     return this;

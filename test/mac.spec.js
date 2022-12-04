@@ -1,12 +1,21 @@
 const { expect } = require('chai');
 const { Builder, Browser, } = require('selenium-webdriver');
-const MacPage = require("../pages/macPage");
-const MacAirPage = require("../pages/macAirPage");
+
+const Driver = require("../driver/Driver");
+const MacPage = require("../pages/mac.page");
+const MacAirPage = require("../pages/macAir.page");
+const DataReaderService = require("../services/dataReader.service");
 
 describe('Add items to bag.', () => {
+  before(async function () {
+    const props = await DataReaderService.getTestData('mac.properties');
+    for (const key in props) {
+      this[key] = props[key];
+    }
+  })
+
   beforeEach(async function () {
-    this.driver = new Builder().forBrowser(Browser.CHROME).build();
-    await this.driver.manage().window().maximize();
+    this.driver = await Driver.createDriver();
   });
 
   it('Should add 13inch mac air to the bag.', async function () {
@@ -20,11 +29,11 @@ describe('Add items to bag.', () => {
     
     const proceedButton = await macAirPage.getProceedButton();
     const proceedButtonText = await proceedButton.getText();
-    expect(proceedButtonText).to.be.equal("Review Bag");
+    expect(proceedButtonText).to.be.equal(this.proceedButtonText);
 
     const productTitle = await macAirPage.getProductName();
     const productNameText = await productTitle.getText();
-    expect(productNameText).to.be.equal("MacBook Air with M2 chip - Midnight");
+    expect(productNameText).to.be.equal(this.productNameText);
   }).timeout(30000);
 
   afterEach(async function () {

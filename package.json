@@ -4,17 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test",
-    "remote-test": "browserstack-node-sdk mocha test/**/*.js --timeout=60000"
+    "test": "mocha test/**/*.js",
+    "remote-test": "SET NODE_ENV=test && browserstack-node-sdk mocha test/**/*.js --timeout=120000"
   },
   "keywords": [],
-  "author": "",
+  "author": "Vladislav Burachenok",
   "license": "ISC",
   "dependencies": {
     "browserstack-local": "^1.4.8",
-    "selenium-webdriver": "4.2.0",
+    "browserstack-node-sdk": "latest",
     "chai": "^4.2.0",
+    "dotenv": "^16.0.3",
     "mocha": "^6.2.0",
-    "browserstack-node-sdk": "latest"
+    "mocha-logger": "^1.0.8",
+    "selenium-webdriver": "4.2.0"
   }
 }
