@@ -43,6 +43,17 @@ describe('Should engrave items.', () => {
     expect(textContent).to.contain(this.engravingValidationErrorMessage);
   }).timeout(Constants.TEST_TIMEOUT);
 
+  it('Should handle engraving length case.', async function () {
+    const page = new AirpodsPage(this.driver);
+    await page.openPage();
+    await page.clickEngraveButton();
+    await page.inputValidEngravingValue(this.outOfLengthEngravingValue);
+
+    const text = await page.getEngraveValidationMessage();
+    const textContent = await text.getText();
+    expect(textContent).to.contain(this.engravingOutOfLengthErrorMessage);
+  }).timeout(Constants.TEST_TIMEOUT);
+
   afterEach(async function () {
     await new Promise((resolve) => {
       setTimeout(async () => {
