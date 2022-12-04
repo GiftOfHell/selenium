@@ -5,6 +5,7 @@ const Driver = require("../driver/Driver");
 const MacPage = require("../pages/mac.page");
 const MacAirPage = require("../pages/macAir.page");
 const DataReaderService = require("../services/dataReader.service");
+const Constants = require("../config/constants");
 
 describe('Add items to bag.', () => {
   before(async function () {
@@ -34,7 +35,7 @@ describe('Add items to bag.', () => {
     const productTitle = await macAirPage.getProductName();
     const productNameText = await productTitle.getText();
     expect(productNameText).to.be.equal(this.productNameText);
-  }).timeout(30000);
+  }).timeout(Constants.TEST_TIMEOUT);
 
   afterEach(async function () {
     await new Promise((resolve) => {

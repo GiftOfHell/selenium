@@ -6,6 +6,7 @@ const MacPage = require("../pages/mac.page");
 const MacAirPage = require("../pages/macAir.page");
 const AirpodsPage = require('../pages/airpods.page');
 const DataReaderService = require("../services/dataReader.service");
+const Constants = require("../config/constants");
 
 describe('Should engrave items.', () => {
   before(async function () {
@@ -28,7 +29,7 @@ describe('Should engrave items.', () => {
     const img = await page.getEngraveImage();
     const link = await img.getAttribute('src');
     expect(link).to.contain(this.validEngravingValue);
-  }).timeout(30000);
+  }).timeout(Constants.TEST_TIMEOUT);
 
   it('Should handle bad engrave words.', async function () {
     const page = new AirpodsPage(this.driver);
@@ -39,7 +40,7 @@ describe('Should engrave items.', () => {
     const text = await page.getEngraveValidationMessage();
     const textContent = await text.getText();
     expect(textContent).to.contain(this.engravingValidationErrorMessage);
-  }).timeout(30000);
+  }).timeout(Constants.TEST_TIMEOUT);
 
   afterEach(async function () {
     await new Promise((resolve) => {
