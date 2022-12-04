@@ -8,7 +8,7 @@ const DataReaderService = require("../services/dataReader.service");
 const Constants = require("../config/constants");
 const CartPage = require('../pages/cart.page');
 
-describe('Add items to bag.', () => {
+describe('Add mac items to the bag.', () => {
   before(async function () {
     const props = await DataReaderService.getTestData('mac.properties');
     for (const key in props) {
