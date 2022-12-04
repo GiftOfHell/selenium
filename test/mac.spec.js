@@ -59,6 +59,20 @@ describe('Add items to bag.', () => {
     expect(headingText).to.be.equal(this.emptyCartHeading);
   }).timeout(Constants.TEST_TIMEOUT);
 
+  it('Price should change according to the device configuration.', async function () {
+    const macPage = new MacPage(this.driver);
+    await macPage.openPage();
+    await macPage.clickBuyButton();
+
+    const macAirPage = new MacAirPage(this.driver);
+    await macAirPage.clickSelectButton();
+    await macAirPage.selectStorageOption();
+
+    const productPrice = await macAirPage.getProductPrice();
+    const productPriceText = await productPrice.getText();
+    expect(productPriceText).to.contain(this.extendedStorageProductPriceValue);
+  }).timeout(Constants.TEST_TIMEOUT);
+
   afterEach(async function () {
     await new Promise((resolve) => {
       setTimeout(async () => {

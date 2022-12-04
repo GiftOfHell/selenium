@@ -5,6 +5,8 @@ class MacAirPage extends BasePage {
   static SELECT_BUTTON_XPATH = `//*[@data-autom='proceed-13inch-better']`;
   static ADD_TO_BAG_BUTTON_XPATH = `//*[@data-autom='addToCart']`;
   static PROCEED_BUTTON_XPATH = `//*[@data-autom='proceed']`;
+  static STORAGE_OPTION_XPATH = `//*[@data-autom='optionSelector-hard_drive_4']`;
+  static PRODUCT_PRICE_XPATH = `//*[@data-autom='full-price']`;
 
   async clickSelectButton() {
     logger.info("Clicking the select button.");
@@ -33,6 +35,20 @@ class MacAirPage extends BasePage {
     await button.click();
 
     return this;
+  }
+
+  async selectStorageOption() {
+    logger.info("Selecting the storage option.");
+    const button = await this.findByXpath(MacAirPage.STORAGE_OPTION_XPATH);
+    await this.driver.executeScript("arguments[0].click()", button)
+
+    return this;
+  }
+
+  async getProductPrice() {
+    await this.driver.sleep(2000);
+    logger.info("Getting the product price.");
+    return this.findByXpath(MacAirPage.PRODUCT_PRICE_XPATH);
   }
 }
 
