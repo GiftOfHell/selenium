@@ -27,14 +27,15 @@ describe('Add items to bag.', () => {
     const macAirPage = new MacAirPage(this.driver);
     await macAirPage.clickSelectButton();
     await macAirPage.clickAddToBag();
-    
-    const proceedButton = await macAirPage.getProceedButton();
-    const proceedButtonText = await proceedButton.getText();
-    expect(proceedButtonText).to.be.equal(this.proceedButtonText);
+    await macAirPage.clickReviewBag();
 
     const productTitle = await macAirPage.getProductName();
     const productNameText = await productTitle.getText();
     expect(productNameText).to.be.equal(this.productNameText);
+
+    const productPrice = await macAirPage.getProductPrice();
+    const productPriceText = await productPrice.getText();
+    expect(productPriceText).to.contain(this.productPriceValue);
   }).timeout(Constants.TEST_TIMEOUT);
 
   afterEach(async function () {

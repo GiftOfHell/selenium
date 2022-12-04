@@ -4,7 +4,7 @@ const { Builder, Browser, } = require('selenium-webdriver');
 const Driver = require("../driver/Driver");
 const MacPage = require("../pages/mac.page");
 const MacAirPage = require("../pages/macAir.page");
-const AirpodsPage = require('../pages/airpods.page');
+const AirpodsPage = require("../pages/airpods.page");
 const DataReaderService = require("../services/dataReader.service");
 const Constants = require("../config/constants");
 
@@ -20,15 +20,16 @@ describe('Should engrave items.', () => {
     this.driver = await Driver.createDriver();
   });
 
-  it('Should engrave items with text.', async function () {
-    const page = new AirpodsPage(this.driver);
-    await page.openPage();
-    await page.clickEngraveButton();
-    await page.inputValidEngravingValue(this.validEngravingValue);
 
-    const img = await page.getEngraveImage();
-    const link = await img.getAttribute('src');
-    expect(link).to.contain(this.validEngravingValue);
+  it("Should engrave items with text.", async function () {
+      const page = new AirpodsPage(this.driver);
+      await page.openPage();
+      await page.clickEngraveButton();
+      await page.inputValidEngravingValue(this.validEngravingValue);
+  
+      const img = await page.getEngraveImage();
+      const link = await img.getAttribute('src');
+      expect(link).to.contain(this.validEngravingValue);
   }).timeout(Constants.TEST_TIMEOUT);
 
   it('Should handle bad engrave words.', async function () {
