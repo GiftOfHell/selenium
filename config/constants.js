@@ -1,3 +1,3 @@
 module.exports = {
-    TEST_TIMEOUT: 30000,
+    TEST_TIMEOUT: 60000,
 }
